@@ -56,8 +56,6 @@ void insert(Node* t,int key)
             q.push(temp->right);
         }
     }
-
-
 }
 
 void deletDeepest(struct Node* root, 
