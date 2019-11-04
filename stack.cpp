@@ -1,5 +1,3 @@
-/* C++ program to implement basic stack 
-operations */
 #include <bits/stdc++.h> 
 
 using namespace std; 
@@ -64,8 +62,8 @@ bool Stack::isEmpty()
 int main() 
 { 
 	class Stack s; 
-  s,push(1);
-  s.push(3);
+	s.push(1);
+	s.push(3);
 	s.push(5); 
 	s.push(7); 
 	s.push(9); 
