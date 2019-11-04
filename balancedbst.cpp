@@ -277,12 +277,12 @@ int main()
     root = insert(root, 25);  
 
     cout << "Preorder traversal of the "
-            "constructed AVL tree is \n";  
+            "constructed AVL tree is:  ";  
     preOrder(root); 
-    root = deleteNode(root, 10);  
+    root = deleteNode(root, 25);  
 
     cout << "\nPreorder traversal after"
-         << " deletion of 10 \n";  
+         << " deletion :  ";  
     preOrder(root);  
       
     return 0;  
