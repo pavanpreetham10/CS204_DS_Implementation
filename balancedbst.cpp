@@ -269,11 +269,11 @@ int main()
       
     /* Constructing tree given in  
     the above figure */
-    root = insert(root, 10);  
-    root = insert(root, 20);  
-    root = insert(root, 30);  
-    root = insert(root, 40);  
-    root = insert(root, 50);  
+    root = insert(root, 1);  
+    root = insert(root, 22);  
+    root = insert(root, 36);  
+    root = insert(root, 4);  
+    root = insert(root, 57);  
     root = insert(root, 25);  
 
     cout << "Preorder traversal of the "
