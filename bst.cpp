@@ -1,5 +1,5 @@
-#include<stdio.h> 
-#include<stdlib.h> 
+#include<bits/stdc++.h>
+using namespace std;
 
 struct node 
 { 
@@ -22,7 +22,7 @@ void inorder(struct node *root)
 	if (root != NULL) 
 	{ 
 		inorder(root->left); 
-		printf("%d ", root->key); 
+		cout<<root->key; 
 		inorder(root->right); 
 	} 
 } 
@@ -108,6 +108,12 @@ struct node* deleteNode(struct node* root, int key)
 // Driver Program to test above functions 
 int main() 
 { 
+	/* Let us create following BST 
+			50 
+		/	 \ 
+		30	 70 
+		/ \ / \ 
+	20 40 60 80 */
 	struct node *root = NULL; 
 	root = insert(root, 50); 
 	root = insert(root, 30); 
@@ -117,22 +123,22 @@ int main()
 	root = insert(root, 60); 
 	root = insert(root, 80); 
 
-	printf("Inorder traversal of the given tree \n"); 
+	cout<<"Inorder traversal of the given tree \n"); 
 	inorder(root); 
 
-	printf("\nDelete 20\n"); 
+	cout<<"\nDelete 20\n"; 
 	root = deleteNode(root, 20); 
-	printf("Inorder traversal of the modified tree \n"); 
+	cout<<"Inorder traversal of the modified tree \n"; 
 	inorder(root); 
 
-	printf("\nDelete 30\n"); 
+	cout<<"\nDelete 30\n"; 
 	root = deleteNode(root, 30); 
-	printf("Inorder traversal of the modified tree \n"); 
+	cout<<"Inorder traversal of the modified tree \n"; 
 	inorder(root); 
 
-	printf("\nDelete 50\n"); 
+	cout<<"\nDelete 50\n"; 
 	root = deleteNode(root, 50); 
-	printf("Inorder traversal of the modified tree \n"); 
+	cout<<"Inorder traversal of the modified tree \n"; 
 	inorder(root); 
 
 	return 0; 
