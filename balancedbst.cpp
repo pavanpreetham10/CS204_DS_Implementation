@@ -266,7 +266,9 @@ Node* deleteNode(Node* root, int key)
 int main()  
 {  
     Node *root = NULL;  
-
+      
+    /* Constructing tree given in  
+    the above figure */
     root = insert(root, 10);  
     root = insert(root, 20);  
     root = insert(root, 30);  
@@ -276,7 +278,12 @@ int main()
 
     cout << "Preorder traversal of the "
             "constructed AVL tree is \n";  
+    preOrder(root); 
+    root = deleteNode(root, 10);  
+
+    cout << "\nPreorder traversal after"
+         << " deletion of 10 \n";  
     preOrder(root);  
       
     return 0;  
-}
+} 
